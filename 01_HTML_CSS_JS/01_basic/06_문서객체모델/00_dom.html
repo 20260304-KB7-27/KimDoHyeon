@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- defer: HTML 파싱이 끝난뒤 script 실행 -->
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <h1 id="header">DOM 구조</h1>
+    <div>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod optio
+        doloribus ea quas eos atque tempora similique debitis numquam labore
+        quisquam veritatis corrupti maxime quaerat voluptatibus perferendis
+        recusandae possimus consequuntur, magni vero qui! Quos suscipit
+        excepturi minima voluptates molestias. Assumenda necessitatibus fugiat
+        ipsum consequuntur dolore repellendus earum inventore, accusantium
+        perferendis!
+      </p>
+
+      <ul>
+        <li>항목</li>
+        <li>항목</li>
+        <li>항목</li>
+      </ul>
+    </div>
+    <script>
+      //   // document 객체는 웹 페이지 최상위 DOM 요소
+      //   console.log(document);
+
+      //   // HTML Collection
+      //   // document에서 getElements로 찾아온 요소들의 묶음.
+      //   // 유사 배열 (배열 메소드 사용불가)
+      //   let li = document.getElementsByTagName('li');
+      //   console.log(li);
+      //   // $ 관례적으로 요소노드를 선택할때 사용
+      //   const $h1 = document.getElementById('header');
+
+      //   $h1.style.color = 'red';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Script스니펫</title>
+    <script>
+      window.onload = function () {
+        let btn = document.getElementById('btn');
+        let result = Array.of();
+
+        btn.onclick = function () {
+          let foods = document.querySelectorAll('input');
+          let foodsArr = Array.from(foods);
+          for (let i = 0; i < foodsArr.length; i++) {
+            if (foodsArr[i].name == 'food') {
+              if (foodsArr[i].checked) {
+                result.push(foodsArr[i].value);
+              }
+            }
+          }
+          console.log(result.join());
+        };
+      };
+    </script>
+  </head>
+
+  <body>
+    <form>
+      <div>
+        좋아하는 음식은?
+        <label><input type="checkbox" name="food" value="라면" /> 라면</label>
+        <label><input type="checkbox" name="food" value="만두" /> 만두</label>
+        <label
+          ><input type="checkbox" name="food" value="불고기" /> 불고기</label
+        >
+        <input id="btn" type="button" value="전송" />
+      </div>
+    </form>
+  </body>
+</html>
