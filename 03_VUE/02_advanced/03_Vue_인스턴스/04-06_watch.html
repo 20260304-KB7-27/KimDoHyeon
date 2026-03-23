@@ -20,10 +20,10 @@
 
       createApp({
         setup() {
-          const name = ref("");
+          const name = ref('');
           const user = ref({
             age: 0,
-            email: "",
+            email: '',
           });
 
           // watch
@@ -46,7 +46,7 @@
             },
           );
           watch(
-            () => ({ ...user }), // 객체를 복사해서
+            () => ({ ...user.value }), // 객체를 복사해서
             (newVal, oldVal) => {
               console.log(
                 `기존 사용자 : ${oldVal.age}, ${oldVal.email} -> 변경된 사용자 : ${newVal.age}, ${newVal.email}`,
@@ -55,7 +55,7 @@
           );
           return { user, name };
         },
-      }).mount("#app");
+      }).mount('#app');
     </script>
   </body>
 </html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue 3 연습용 Composition</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <style>
+    .warning {
+      background-color: aqua;
+      color: purple;
+    }
+  </style>
+  <body>
+    <div id="app">
+      <div>1부터 100까지만 입력가능합니다.</div>
+      <!-- 
+      반응형 변수가 바뀌는 감지
+       -> computed(계산결과를 도출할 때 사용, 캐시가 있기 때문)
+       -> watch(api같은 거에 사용) 
+       -->
+      <div>
+        점수 : <input type="text" v-model.number="score" :class="info" />
+      </div>
+    </div>
+
+    <script>
+      const { createApp, ref, computed } = Vue;
+
+      createApp({
+        setup() {
+          const score = ref(0);
+          const info = computed(() => {
+            return {
+              // true면 warning 적용 false면 적용X
+              warning: score.value < 1 || score.value > 100,
+            };
+          });
+          return { score, info };
+        },
+      }).mount('#app');
+    </script>
+  </body>
+</html>

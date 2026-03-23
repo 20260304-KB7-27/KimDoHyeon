@@ -7,9 +7,26 @@
   </head>
   <body>
     <div id="app">
-      <h1>📌 게시판 목록 v2</h1>
+      <h1>📌 게시판 목록 v3</h1>
+      <div id="new" @keyup.enter="addPost">
+        <input
+          type="text"
+          v-model="newPost.title"
+          placeholder="새 게시글 제목"
+        />
+        <input
+          type="text"
+          v-model="newPost.content"
+          placeholder="새 게시글 내용"
+        />
+        <button @click="addPost">저장</button>
+      </div>
       <ul>
-        <li v-for="post in posts" :key="post.no" class="post-item-wrapper">
+        <li
+          v-for="post in sortedPosts"
+          :key="post.no"
+          class="post-item-wrapper"
+        >
           <div @click="togglePost(post.no)" class="post-item">
             {{ post.no }}. {{ post.title }}
             <span class="arrow"
@@ -18,9 +35,28 @@
           </div>
 
           <div v-if="selectedPostNo === post.no" class="post-content">
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.content }}</p>
-            <button @click="closePost">닫기</button>
+            <div v-show="!isEdit">
+              <h2>{{ post.title }}</h2>
+              <p>{{ post.content }}</p>
+
+              <div class="action">
+                <button @click="startEdit(post)">수정</button>
+                <button @click="deletePost(post.no)">삭제</button>
+                <button @click="closePost">닫기</button>
+              </div>
+            </div>
+            <div v-show="isEdit">
+              <div class="editBox">
+                <input type="text" v-model="editPost.title" />
+                <textarea v-model="editPost.content">
+{{editPost.content}}</textarea
+                >
+              </div>
+              <div class="action">
+                <button @click="updatePost(post.no)">저장</button>
+                <button @click="closePost">취소</button>
+              </div>
+            </div>
           </div>
         </li>
       </ul>
@@ -28,10 +64,31 @@
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script>
-      const { createApp, ref } = Vue;
+      const { createApp, ref, computed } = Vue;
 
       createApp({
         setup() {
+          // 새로운 게시글
+          const newPost = ref({
+            title: '',
+            content: '',
+          });
+
+          // 수정용
+          const editPost = ref({
+            title: '',
+            content: '',
+          });
+
+          const startEdit = (post) => {
+            editPost.value.title = post.title;
+            editPost.value.content = post.content;
+            isEdit.value = true;
+          };
+
+          const isEdit = ref(false);
+
+          // 게시글
           const posts = ref([
             {
               no: 1,
@@ -95,6 +152,10 @@
             },
           ]);
 
+          const sortedPosts = computed(() => {
+            return [...posts.value].sort((a, b) => b.no - a.no);
+          });
+
           // 선택된 게시글의 번호를 저장
           const selectedPostNo = ref(null);
 
@@ -107,17 +168,76 @@
             selectedPostNo.value = null;
           };
 
+          // 새로운 게시글 추가
+          const addPost = (e) => {
+            // 빈 문자열 예외처리
+            if (newPost.value.title === '' || newPost.value.content === '')
+              return;
+            console.log(`posts.value.no: ${sortedPosts.value[0].no}`);
+
+            // 배열에 추가
+            posts.value.push({
+              no: sortedPosts.value[0].no + 1,
+              title: newPost.value.title,
+              content: newPost.value.content,
+            });
+
+            // 초기화
+            newPost.value.title = '';
+            newPost.value.content = '';
+          };
+
+          // 게시글 수정
+          const updatePost = (no) => {
+            // 해당하는 게시글의 index 찾기
+            let index = posts.value.findIndex((post) => no === post.no);
+
+            // index의 게시글 수정
+            posts.value[index].title = editPost.value.title;
+            posts.value[index].content = editPost.value.content;
+
+            isEdit.value = false;
+          };
+
+          // 게시글 삭제
+          const deletePost = (no) => {
+            const q = confirm('정말 삭제하시겠습니까?');
+            if (!q) return;
+            // 해당하는 게시글의 index 찾기
+            let index = posts.value.findIndex((post) => no === post.no);
+
+            // index의 게시글 삭제
+            posts.value.splice(index, 1);
+          };
+
           return {
+            newPost,
+            editPost,
+            startEdit,
+            isEdit,
             posts,
+            sortedPosts,
             selectedPostNo,
             togglePost,
             closePost,
+            addPost,
+            updatePost,
+            deletePost,
           };
         },
       }).mount('#app');
     </script>
 
     <style>
+      #new {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+      }
+      #new > input {
+        margin-top: 10px;
+        padding: 5px 10px;
+      }
       h1 {
         text-align: center;
         color: #333;
@@ -157,6 +277,19 @@
         background: #ff4f4f;
       }
 
+      .editBox * {
+        display: block;
+        margin-top: 5px;
+        width: 100%;
+      }
+      .editBox > textarea {
+        height: 50px;
+      }
+
+      .action {
+        display: flex;
+        gap: 3px;
+      }
       .arrow {
         font-size: 0.8em;
         color: #888;

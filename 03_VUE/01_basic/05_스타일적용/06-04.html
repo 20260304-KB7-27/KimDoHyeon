@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue 3 연습용 Options API</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <button :style="[myColor, myLayout]">테스트</button>
+    </div>
+
+    <script>
+      const { createApp } = Vue;
+
+      createApp({
+        data() {
+          return {
+            myColor: {
+              backgroundColor: 'purple',
+              color: 'yellow',
+            },
+            myLayout: {
+              width: '150px',
+              height: '80px',
+              textAlign: 'center',
+            },
+          };
+        },
+        methods: {},
+      }).mount('#app');
+    </script>
+  </body>
+</html>
