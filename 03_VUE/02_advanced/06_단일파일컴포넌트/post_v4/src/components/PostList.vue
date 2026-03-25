@@ -62,9 +62,6 @@ const startEdit = (post) => {
 
 // emit 정의
 const updatePost = (post) => {
-  console.log(
-    `postList에 수정 요청 전달함: ${post.no} ${post.title} ${post.content}`,
-  );
   emit('updatePost', post);
   isEdit.value = false;
   editPost.value.no = '';
