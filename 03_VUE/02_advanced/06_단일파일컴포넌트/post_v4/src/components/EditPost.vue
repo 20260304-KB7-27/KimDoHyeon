@@ -5,8 +5,8 @@
       <textarea v-model="editPost.content">{{ editPost.content }}</textarea>
     </div>
     <div class="action">
-      <button @click="emit('updatePost', editPost)">저장</button>
-      <button @click="emit('closePost')">취소</button>
+      <button @click="emit('update-post', editPost)">저장</button>
+      <button @click="emit('close-post')">취소</button>
     </div>
   </div>
 </template>
@@ -19,7 +19,7 @@ const props = defineProps({
     content: String,
   },
 });
-const emit = defineEmits(['updatePost', 'closePost']);
+const emit = defineEmits(['update-post', 'close-post']);
 </script>
 
 <style lang="scss" scoped></style>

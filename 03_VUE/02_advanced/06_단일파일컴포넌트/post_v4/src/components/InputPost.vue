@@ -20,7 +20,7 @@ const newPost = ref({
 });
 
 // 부모에게 전달할 이벤트 설정
-const emit = defineEmits(['addPost']);
+const emit = defineEmits(['add-post']);
 
 // 새로운 게시글 추가
 const addPost = (e) => {
@@ -28,7 +28,7 @@ const addPost = (e) => {
   if (newPost.value.title === '' || newPost.value.content === '') return;
 
   // 전할 이벤트, 이벤트에 어떤 정보를 넣어 보낼 것인가?
-  emit('addPost', {
+  emit('add-post', {
     no: props.sortedPosts[0].no + 1,
     title: newPost.value.title,
     content: newPost.value.content,

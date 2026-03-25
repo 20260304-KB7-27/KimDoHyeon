@@ -3,15 +3,15 @@
     <PostView
       v-show="!isEdit"
       :post="post"
-      @startEdit="startEdit"
-      @deletePost="deletePost"
-      @closePost="closePost"
+      @start-edit="startEdit"
+      @delete-post="deletePost"
+      @close-post="closePost"
     ></PostView>
     <EditPost
       v-show="isEdit"
-      :editPost="editPost"
-      @updatePost="updatePost"
-      @closePost="closePost"
+      :edit-post="editPost"
+      @update-post="updatePost"
+      @close-post="closePost"
     ></EditPost>
   </div>
 </template>
@@ -34,24 +34,24 @@ const props = defineProps({
   },
 });
 const emit = defineEmits([
-  'startEdit',
-  'updatePost',
-  'deletePost',
-  'closePost',
+  'start-edit',
+  'update-post',
+  'delete-post',
+  'close-post',
 ]);
 
 // emit 함수 정의
 const startEdit = (post) => {
-  emit('startEdit', post);
+  emit('start-edit', post);
 };
 const updatePost = (editPost) => {
-  emit('updatePost', editPost);
+  emit('update-post', editPost);
 };
 const deletePost = (no) => {
-  emit('deletePost', no);
+  emit('delete-post', no);
 };
 const closePost = () => {
-  emit('closePost');
+  emit('close-post');
 };
 </script>
 

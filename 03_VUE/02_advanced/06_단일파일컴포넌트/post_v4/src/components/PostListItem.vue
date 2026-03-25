@@ -3,19 +3,19 @@
     <!-- 게시글 제목 표시 -->
     <PostHeader
       :post="post"
-      :isOpen="isOpen"
-      @togglePost="togglePost"
+      :is-open="isOpen"
+      @toggle-post="togglePost"
     ></PostHeader>
     <!-- 게시글 내용 -->
     <PostDetail
-      :isOpen="isOpen"
-      :isEdit="isEdit"
+      :is-open="isOpen"
+      :is-edit="isEdit"
       :post="post"
-      :editPost="editPost"
-      @startEdit="startEdit"
-      @updatePost="updatePost"
-      @deletePost="deletePost"
-      @closePost="closePost"
+      :edit-post="editPost"
+      @start-edit="startEdit"
+      @update-post="updatePost"
+      @delete-post="deletePost"
+      @close-post="closePost"
     ></PostDetail>
   </li>
 </template>
@@ -26,11 +26,11 @@ import PostDetail from './PostDetail.vue';
 
 // 부모한테 있는 이벤트 정의
 const emit = defineEmits([
-  'togglePost',
-  'startEdit',
-  'updatePost',
-  'deletePost',
-  'closePost',
+  'toggle-post',
+  'start-edit',
+  'update-post',
+  'delete-post',
+  'close-post',
 ]);
 
 // 부모한테 받은 props 정의
@@ -51,19 +51,19 @@ const props = defineProps({
 
 // emit 함수 정의
 const togglePost = (no) => {
-  emit('togglePost', no);
+  emit('toggle-post', no);
 };
 const startEdit = (post) => {
-  emit('startEdit', post);
+  emit('start-edit', post);
 };
 const updatePost = (editPost) => {
-  emit('updatePost', editPost);
+  emit('update-post', editPost);
 };
 const deletePost = (no) => {
-  emit('deletePost', no);
+  emit('delete-post', no);
 };
 const closePost = () => {
-  emit('closePost');
+  emit('close-post');
 };
 </script>
 

@@ -4,15 +4,15 @@
     <p>{{ post.content }}</p>
 
     <div class="action">
-      <button @click="emit('startEdit', post)">수정</button>
-      <button @click="emit('deletePost', post.no)">삭제</button>
-      <button @click="emit('closePost')">닫기</button>
+      <button @click="emit('start-edit', post)">수정</button>
+      <button @click="emit('delete-post', post.no)">삭제</button>
+      <button @click="emit('close-post')">닫기</button>
     </div>
   </div>
 </template>
 
 <script setup>
-const emit = defineEmits(['startEdit', 'deletePost', 'closePost']);
+const emit = defineEmits(['start-edit', 'delete-post', 'close-post']);
 const props = defineProps({
   post: {
     no: [Number, String],

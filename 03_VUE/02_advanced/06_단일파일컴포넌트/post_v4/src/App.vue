@@ -1,13 +1,13 @@
 <template>
   <h1>📌 게시판 목록 v3</h1>
   <!-- 입력 -->
-  <InputPost :sortedPosts="sortedPosts" @add-post="addPost"></InputPost>
+  <InputPost :sorted-posts="sortedPosts" @add-post="addPost"></InputPost>
 
   <!-- 게시글 출력 리스트 -->
   <PostList
     :posts="sortedPosts"
-    @updatePost="updatePost"
-    @deletePost="deletePost"
+    @update-post="updatePost"
+    @delete-post="deletePost"
   ></PostList>
 </template>
 

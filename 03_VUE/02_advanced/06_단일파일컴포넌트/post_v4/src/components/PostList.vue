@@ -4,14 +4,14 @@
       v-for="post in posts"
       :key="post.no"
       :post="post"
-      :isOpen="selectedPostNo === post.no"
-      :isEdit="isEdit"
-      :editPost="editPost"
-      @togglePost="togglePost"
-      @closePost="closePost"
-      @startEdit="startEdit"
-      @updatePost="updatePost"
-      @deletePost="deletePost"
+      :is-open="selectedPostNo === post.no"
+      :is-edit="isEdit"
+      :edit-post="editPost"
+      @toggle-post="togglePost"
+      @close-post="closePost"
+      @start-edit="startEdit"
+      @update-post="updatePost"
+      @delete-post="deletePost"
     ></PostListItem>
   </ul>
 </template>
@@ -25,7 +25,7 @@ const props = defineProps({
   posts: Array,
 });
 // 부모에게 빌려온 핸들러
-const emit = defineEmits(['updatePost', 'deletePost']);
+const emit = defineEmits(['update-post', 'delete-post']);
 
 // 선택된 게시글의 번호를 저장(수정하려면 이 vue로 수정값 옮겨줘야 함)
 const selectedPostNo = ref(null);
@@ -62,14 +62,14 @@ const startEdit = (post) => {
 
 // emit 정의
 const updatePost = (post) => {
-  emit('updatePost', post);
+  emit('update-post', post);
   isEdit.value = false;
   editPost.value.no = '';
   editPost.value.title = '';
   editPost.value.content = '';
 };
 const deletePost = (no) => {
-  emit('deletePost', no);
+  emit('delete-post', no);
 };
 </script>
 

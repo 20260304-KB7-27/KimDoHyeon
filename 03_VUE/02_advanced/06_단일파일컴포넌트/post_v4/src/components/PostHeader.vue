@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 부모에게 togglePost 이벤트 요청 -->
-    <div @click="emit('togglePost', post.no)" class="post-item">
+    <div @click="emit('toggle-post', post.no)" class="post-item">
       {{ post.no }}. {{ post.title }}
       <span class="arrow">{{ isOpen ? '▲' : '▼' }}</span>
     </div>
@@ -17,7 +17,7 @@ const props = defineProps({
   },
   isOpen: Boolean,
 });
-const emit = defineEmits(['togglePost']);
+const emit = defineEmits(['toggle-post']);
 </script>
 
 <style lang="scss" scoped></style>
