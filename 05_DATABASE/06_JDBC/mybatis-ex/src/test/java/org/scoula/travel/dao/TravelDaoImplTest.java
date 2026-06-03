@@ -76,6 +76,6 @@ class TravelDaoImplTest {
 
     @Test
     void remove() {
-        dao.remove(100L);
+        dao.remove(300L);
     }
 }

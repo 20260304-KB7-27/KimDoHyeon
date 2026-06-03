@@ -55,7 +55,7 @@ Mappper.xml
     - parameterType : TravelVO 객체의 getter를 이용해서 가져옴
     -->
     <insert id="insert" parameterType="TravelVO">
-        insert into tbl_travel (district, title, description, address, phone)
+        insert into tbl_travel (no, district, title, description, address, phone)
         values (#{no}, #{district}, #{title}, #{description}, #{address}, #{phone})
     </insert>
 

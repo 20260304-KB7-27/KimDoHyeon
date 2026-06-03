@@ -29,7 +29,7 @@ XML(Extensible Markup Language)
     클래스 경로 별칭 설정
     -->
     <typeAliases>
-        <typeAlias type="org.scoula.travel.database.TravelVO" alias="TravelVO"/>
+        <typeAlias type="org.scoula.travel.domain.TravelVO" alias="TravelVO"/>
     </typeAliases>
 
     <!--
