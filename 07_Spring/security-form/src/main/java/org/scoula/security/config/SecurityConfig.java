@@ -1,12 +1,16 @@
 package org.scoula.security.config;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.csrf.CsrfFilter;
@@ -18,7 +22,12 @@ import org.springframework.web.filter.CharacterEncodingFilter;
 @Configuration
 @EnableWebSecurity // 필터 체인 활성화
 @Log4j2
+@MapperScan(basePackages = {"org.scoula.security.account.mapper"})
+@RequiredArgsConstructor
+@ComponentScan(basePackages = {"org.scoula.security"})
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    private final UserDetailsService userDetailsService;
 
     // 문자셋필터
     public CharacterEncodingFilter encodingFilter() {
@@ -63,6 +72,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
+        auth
+                .userDetailsService(userDetailsService) // userDetailsService
+                .passwordEncoder(passwordEncoder());
+
+/*
         // 관리자 계정
         auth.inMemoryAuthentication()
                 .withUser("admin")
@@ -74,6 +88,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .withUser("member")
                 .password("1234")
                 .roles("MEMBER");
+*/
+
     }
 
     @Bean
