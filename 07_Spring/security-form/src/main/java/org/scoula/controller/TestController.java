@@ -15,6 +15,11 @@ import java.security.Principal;
 @RequestMapping("/member")
 public class TestController {
 
+    @GetMapping("")
+    public String test(){
+        return "CORS Problem Test";
+    }
+
     /*
     * 인증 객체를 꺼내는 방법
     * 1. principal: username만 꺼낼 수 있음
