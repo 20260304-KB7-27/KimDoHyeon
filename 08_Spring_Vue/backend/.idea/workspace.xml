@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fc485df-fb19-4bc7-b972-43262dfdc667" name="변경" comment="front, backend">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/448ed7e1-9574-4ec7-aed6-c580a8bb2ecf.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/448ed7e1-9574-4ec7-aed6-c580a8bb2ecf/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/448ed7e1-9574-4ec7-aed6-c580a8bb2ecf/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/448ed7e1-9574-4ec7-aed6-c580a8bb2ecf/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/448ed7e1-9574-4ec7-aed6-c580a8bb2ecf/storage_v2/_src_/schema/scoula_db.El1shA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/448ed7e1-9574-4ec7-aed6-c580a8bb2ecf/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/dto/MemberDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/dto/MemberJoinDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/mapper/MemberMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/service/MemberServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/scoula/member/mapper/MemberMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/index-BcNtodGM.js" afterDir="false" />
+    <list default="true" id="5fc485df-fb19-4bc7-b972-43262dfdc667" name="변경" comment="backend - 로그인,로그아웃">
       <change afterPath="$PROJECT_DIR$/../frontend/src/api/authApi.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../frontend/src/api/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/menu/AccountMenuGroup.vue" afterDir="false" />
@@ -28,21 +12,6 @@
       <change afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/menu/LogoutMenuItem.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/menu/MenuGroup.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/menu/MenuItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/config/RootConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/config/ServletConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/security/account/domain/MemberVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/account/domain/MemberVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/BoardListPage--bwlt_LY.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/BoardListPage-BfieMrDT.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/ChangePasswordPage-DH2iZpoU.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/ChangePasswordPage-FVGoat7O.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/GalleryListPage-Ba-kl6aH.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/GalleryListPage-DhXgT1YW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/JoinPage-CjVKUD9B.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/JoinPage-Bz1OadRi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/LoginPage-Dahs-sX5.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/LoginPage-BMIIxGj9.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/ProfilePage-DjYmEzVf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/ProfilePage-TWwDyiPb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/TravelListPage-Bpf4DcqG.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/TravelListPage-CiuBBUhQ.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/index-Cjyw8muk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/layouts/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/NavBar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/config/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/pages/auth/JoinPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/auth/JoinPage.vue" afterDir="false" />
@@ -271,7 +240,7 @@
       <workItem from="1782879277441" duration="5885000" />
       <workItem from="1782885822360" duration="1276000" />
       <workItem from="1782965304724" duration="3018000" />
-      <workItem from="1782970542818" duration="6036000" />
+      <workItem from="1782970542818" duration="6461000" />
     </task>
     <task id="LOCAL-00001" summary="front, backend">
       <option name="closed" value="true" />
@@ -281,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782886116640</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="backend - 로그인,로그아웃">
+      <option name="closed" value="true" />
+      <created>1782978743937</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782978743937</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +277,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="front, backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="front, backend" />
+    <MESSAGE value="backend - 로그인,로그아웃" />
+    <option name="LAST_COMMIT_MESSAGE" value="backend - 로그인,로그아웃" />
   </component>
 </project>
