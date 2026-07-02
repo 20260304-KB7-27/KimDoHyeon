@@ -4,75 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fc485df-fb19-4bc7-b972-43262dfdc667" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/login.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/domain/BoardAttachmentVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/domain/BoardVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/dto/BoardDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/mapper/BoardMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/service/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/service/BoardServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/common/dto/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/config/RootConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/config/ServletConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/exception/RestExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/account/domain/AuthVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/account/domain/CustomUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/account/domain/MemberVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/account/dto/AuthResultDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/account/dto/LoginDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/account/dto/UserInfoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/account/mapper/UserDetailsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/config/SecurityInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/filter/AuthenticationErrorFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/filter/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/filter/JwtUsernamePasswordAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/handler/CustomAccessDeniedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/handler/CustomAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/handler/LoginFailureHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/handler/LoginSuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/service/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/util/JsonResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/util/JwtProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/utils/UploadFileName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/utils/UploadFiles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4jdbc.log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/scoula/board/mapper/BoardMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/scoula/security/account/mapper/UserDetailsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/BoardListPage--bwlt_LY.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/ChangePasswordPage-DH2iZpoU.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/GalleryListPage-Ba-kl6aH.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/JoinPage-CjVKUD9B.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/LoginPage-Dahs-sX5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/ProfilePage-DjYmEzVf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/TravelListPage-Bpf4DcqG.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/background-DPscAwrh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/index-Cjyw8muk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/index-CtErs2ia.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/scoula/config/RootConfigTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/scoula/security/account/mapper/UserDetailsMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/scoula/security/config/SecurityConfigTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/scoula/security/util/JwtProcessorTest.java" afterDir="false" />
+    <list default="true" id="5fc485df-fb19-4bc7-b972-43262dfdc667" name="변경" comment="front, backend">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/448ed7e1-9574-4ec7-aed6-c580a8bb2ecf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/448ed7e1-9574-4ec7-aed6-c580a8bb2ecf/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/448ed7e1-9574-4ec7-aed6-c580a8bb2ecf/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/448ed7e1-9574-4ec7-aed6-c580a8bb2ecf/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/448ed7e1-9574-4ec7-aed6-c580a8bb2ecf/storage_v2/_src_/schema/scoula_db.El1shA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/448ed7e1-9574-4ec7-aed6-c580a8bb2ecf/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/dto/MemberDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/dto/MemberJoinDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/mapper/MemberMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/service/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/scoula/member/mapper/MemberMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/index-BcNtodGM.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/api/authApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/menu/AccountMenuGroup.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/menu/AccountMenuItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/menu/LogoutMenuItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/menu/MenuGroup.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/menu/MenuItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/config/RootConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/config/ServletConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/security/account/domain/MemberVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/account/domain/MemberVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/BoardListPage--bwlt_LY.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/BoardListPage-BfieMrDT.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/ChangePasswordPage-DH2iZpoU.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/ChangePasswordPage-FVGoat7O.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/GalleryListPage-Ba-kl6aH.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/GalleryListPage-DhXgT1YW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/JoinPage-CjVKUD9B.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/JoinPage-Bz1OadRi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/LoginPage-Dahs-sX5.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/LoginPage-BMIIxGj9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/ProfilePage-DjYmEzVf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/ProfilePage-TWwDyiPb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/TravelListPage-Bpf4DcqG.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/TravelListPage-CiuBBUhQ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/index-Cjyw8muk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/layouts/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/NavBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/auth/JoinPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/auth/JoinPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +61,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -94,12 +71,26 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="backend" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="backend" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="MyBatisMapper" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -151,6 +142,7 @@
     &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -160,6 +152,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.scoula.member.dto" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\KimDoHyeon\08_Spring_Vue\backend\src\main\webapp\resources" />
       <recent name="C:\KimDoHyeon\08_Spring_Vue\backend\src\main\resources\org\scoula" />
@@ -170,7 +165,6 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.118" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.118" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/swagger-ui.html" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Gradle : org.scoula : backend-1.0-SNAPSHOT.war">
@@ -275,8 +269,19 @@
       <option name="presentableId" value="Default" />
       <updated>1782879276017</updated>
       <workItem from="1782879277441" duration="5885000" />
-      <workItem from="1782885822360" duration="24000" />
+      <workItem from="1782885822360" duration="1276000" />
+      <workItem from="1782965304724" duration="3018000" />
+      <workItem from="1782970542818" duration="6036000" />
     </task>
+    <task id="LOCAL-00001" summary="front, backend">
+      <option name="closed" value="true" />
+      <created>1782886116640</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1782886116640</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,5 +297,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="front, backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="front, backend" />
   </component>
 </project>
