@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5fc485df-fb19-4bc7-b972-43262dfdc667" name="변경" comment="backend - 로그인,로그아웃">
-      <change afterPath="$PROJECT_DIR$/../frontend/src/api/authApi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/api/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/menu/AccountMenuGroup.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/menu/AccountMenuItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/menu/LogoutMenuItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/menu/MenuGroup.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/menu/MenuItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/layouts/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/layouts/NavBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/auth/JoinPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/auth/JoinPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sample/backend/src/main/webapp/resources/assets/background-DPscAwrh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sample/backend/src/main/webapp/resources/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sample/backend/src/main/webapp/resources/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,33 +87,33 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.backend 빌드.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Tomcat 서버.Tomcat 9.0.118.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/KimDoHyeon/08_Spring_Vue/backend/src/main/webapp/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.backend 빌드.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat 서버.Tomcat 9.0.118.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/KimDoHyeon/08_Spring_Vue/backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "프로젝트",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.scoula.member.dto" />
@@ -240,7 +234,9 @@
       <workItem from="1782879277441" duration="5885000" />
       <workItem from="1782885822360" duration="1276000" />
       <workItem from="1782965304724" duration="3018000" />
-      <workItem from="1782970542818" duration="6461000" />
+      <workItem from="1782970542818" duration="6690000" />
+      <workItem from="1782979435409" duration="1127000" />
+      <workItem from="1783398096118" duration="149000" />
     </task>
     <task id="LOCAL-00001" summary="front, backend">
       <option name="closed" value="true" />
