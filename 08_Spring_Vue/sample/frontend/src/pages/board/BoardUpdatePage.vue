@@ -1,7 +1,8 @@
 <script setup>
-import { ref, reactive } from "vue";
-import { useRoute, useRouter } from "vue-router";
-import boardApi from "@/api/boardApi";
+import { ref, reactive } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
+import boardApi from '@/api/boardApi';
+import TiptapEditor from '@/components/TiptapEditor.vue';
 
 const cr = useRoute();
 const router = useRouter();
@@ -15,7 +16,7 @@ const files = ref(null);
 // 취소 버튼 - 상세 페이지로 복귀
 const back = () => {
   router.push({
-    name: "board/detail",
+    name: 'board/detail',
     params: { no },
     query: cr.query,
   });
@@ -23,7 +24,7 @@ const back = () => {
 
 // 첨부파일 삭제
 const removeFile = async (fileNo, filename) => {
-  if (!confirm(filename + "을 삭제할까요?")) return;
+  if (!confirm(filename + '을 삭제할까요?')) return;
 
   await boardApi.deleteAttachment(fileNo);
   // 화면에서 해당 파일 제거
@@ -33,7 +34,7 @@ const removeFile = async (fileNo, filename) => {
 
 // 폼 제출, 수정 완료 후 상세 페이지로 이동
 const submit = async () => {
-  if (!confirm("수정할까요?")) return;
+  if (!confirm('수정할까요?')) return;
 
   if (files.value.files.length > 0) {
     article.files = files.value.files;
@@ -41,7 +42,7 @@ const submit = async () => {
 
   await boardApi.update(article);
   router.push({
-    name: "board/detail",
+    name: 'board/detail',
     params: { no },
     query: cr.query,
   });
@@ -112,13 +113,7 @@ load();
     <!-- 내용 수정 -->
     <div class="mb-3 mt-3">
       <label for="content" class="form-label">내용</label>
-      <textarea
-        class="form-control"
-        placeholder="내용"
-        id="content"
-        v-model="article.content"
-        rows="10"
-      ></textarea>
+      <TiptapEditor v-model="article.content" />
     </div>
 
     <!-- 버튼 영역 -->
