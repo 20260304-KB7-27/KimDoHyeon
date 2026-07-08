@@ -1,0 +1,1 @@
+import{s as e,y as t}from"./runtime-core.esm-bundler-C0dVILmh.js";import{t as n}from"./_plugin-vue_export-helper-BDNMzG2s.js";var r={};function i(n,r){return t(),e(`h1`,null,`여행 리스트 페이지`)}var a=n(r,[[`render`,i]]);export{a as default};
